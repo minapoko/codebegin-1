@@ -1,0 +1,59 @@
+@import "setting";
+@import "function";
+@import "header&footer";
+
+
+main {
+  h2 {
+    @include sectionTitlebar;
+  }
+
+  h3 {
+    @include subSectionTitlebar;
+  }
+
+  h4 {
+    @include h4style;
+  }
+
+  p {
+    padding: 0 19px;
+    line-height: 2em;
+    margin: 0;
+    .site-color{
+      color: $SiteColor;
+    }
+  }
+
+  a:hover {
+    @extend .textHover !optional;
+  }
+  
+  table {
+   @include tableStyles;
+  }
+  #detail{
+    padding-bottom: 20px;
+    p{
+      padding: 0 19px 20px;
+    }
+  }
+  #howTo {
+    p{
+      padding: 0 19px 20px;
+    }
+    .link a {
+      text-decoration: underline;
+
+      &:hover {
+        @include textHover;
+      }
+    }
+
+    .bgGray {
+      padding: 5px 10px ;
+      border-radius: 5px;
+      background: #E5E5E5;
+    }
+  }
+}

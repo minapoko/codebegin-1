@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>SAMPLE SITE -gallery</title>
+  <link rel="stylesheet" href="css/reset.css">
+  <link rel="stylesheet" href="css/gallery.css">
+  <!-- 共通パーツ読み込み -->
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+  <script>
+    $(function() {
+      $("#header").load("header.html");
+      $("#footer").load("footer.html");
+    });
+  </script>
+  
+</head>
+<body>
+  <div id="header">
+    ここにヘッダーが入る
+  </div>
+  <main>
+    <h2>GALLERY</h2>
+    <article>
+      <img src="images/sample1.jpg" alt="">
+      <div class="detail">
+        <p class="artTitle">見出しを入れます。</p>
+        <p class="describe">説明を入れます。</p>
+      </div>
+    </article>
+    <article>
+      <img src="images/sample2.jpg" alt="">
+      <div class="detail">
+        <p class="artTitle">ここの見出しの色は、cssフォルダのstyle.cssの「.list h4」で設定されているcolorのコードで変更できます。</p>
+        <p class="describe">左の画像の幅もstyle.cssの「.list img」のwidthの数字で変更できます。</p>
+      </div>
+    </article>
+    <article>
+      <img src="images/sample3.jpg" alt="">
+      <div class="detail">
+        <p class="artTitle">見出しを入れます。</p>
+        <p class="describe"> 説明を入れます。</p>
+      </div>
+    </article>
+    <article>
+      <img src="images/sample4.jpg" alt="">
+      <div class="detail">
+        <p class="artTitle">見出しを入れます。</p>
+        <p class="describe"> 説明を入れます。</p>
+      </div>
+    </article>
+    <article>
+      <img src="images/sample5.jpg" alt="">
+      <div class="detail">
+        <p class="artTitle">見出しを入れます。</p>
+        <p class="describe"> 説明を入れます。</p>
+      </div>
+    </article>
+  </main>
+  <div id="footer">
+    ここにフッターが入る。
+  </div>
+</body>
+</html>

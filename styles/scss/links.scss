@@ -1,0 +1,30 @@
+@import "setting";
+@import "function";
+@import "header&footer";
+
+main{
+  padding-bottom: 40px;
+  section{
+    h2{
+      @include sectionTitlebar;
+    }
+    table{
+      @include tableStyles;
+      th{
+        a{
+          text-decoration: underline;
+          &:hover{
+            @include textHover;
+          }
+        }
+        img{
+          height: 124px;
+        }
+      }
+      td{
+        vertical-align: middle;
+      }
+    }
+
+  }
+}
